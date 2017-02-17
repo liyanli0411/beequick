@@ -1,0 +1,18 @@
+<header class="headerl">
+	<span ng-click="detailCtrl.goBack();"><img src="../img/s1.png" alt=""></span>
+	<span>{{ detailCtrl.friut.name }}</span>
+</header>
+
+
+<div class="detail">
+	<img ng-src="{{detailCtrl.friut.img}}">
+	<h1>{{ detailCtrl.friut.name }}</h1>
+	<p>-----商品详情-----</p>
+	<div class="list">
+		<p>价 格:&nbsp{{detailCtrl.friut.price}}</p>
+		<p>品 牌:&nbsp{{detailCtrl.friut.brand}}</p>
+		<p>产品规格:&nbsp{{detailCtrl.friut.size}}</p>
+		<p>产 地:&nbsp{{detailCtrl.friut.production}}</p>
+	</div>
+
+</div>

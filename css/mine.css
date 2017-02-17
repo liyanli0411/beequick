@@ -1,0 +1,307 @@
+@charset "utf-8";
+
+
+
+footer{
+    height:5rem;
+    width: 100%;
+    background: #F6F6F6;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0px;
+    /*padding-top: 5px;*/
+    border: 1px solid #F2F2F2;
+}
+footer a{
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*align-content: center;*/
+
+    /*justify-content: center;*/
+}
+footer .footer1{
+    flex:1;
+    width: 25%;
+    text-align: center;
+}
+footer .footer1 div{
+    margin:0 auto;
+    width: 30%;
+    /*border: 1px solid;*/
+    text-align: center;
+}
+footer .footer1 div img{
+    width: 100%;
+}
+footer .footer1 p {
+    color: #777777;
+    margin-top: .2rem;
+    font-size: 1.2rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:#353D44;
+    font-size: 62.5%;
+}
+a{
+    text-decoration: none;
+}
+ul,li{
+    list-style: none;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    background:#F2F2F2;
+}
+
+.header5{
+    height:14rem;
+    width: 100%;
+    background: #FFD600;
+    display: flex;
+    position: fixed;
+    top: 0px;
+    border: 1px solid #F2F2F2;
+    z-index: 2;
+}
+.header5 .top{
+    height: 10rem;
+    width: 100%;
+}
+.header5 .myown{
+    width: 7rem;
+    margin: 1.5rem;
+}
+.header5 .myown img{
+    width: 100%;
+}
+.header5 .tel{
+    width: 40%;
+    font-size: 3rem;
+    margin-left: 1rem;
+    color: white;
+    position: absolute;
+    left: 25%;
+    margin-top: 1.5rem;
+    top:0;
+}
+.header5 .tel img{
+    width: 60%;
+    margin-left: .5rem;
+}
+.header5 .next{
+    position: absolute;
+    right: 0;
+    top:3rem;
+    width: 12%;
+}
+.header5 .next img{
+    width: 100%;
+}
+.header5 ul{
+    height: 4rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background: rgba(186, 186, 198, 0.3);
+}
+.header5 ul li{
+    flex: 1;
+    height: 75%;
+    text-align: center;
+    line-height: 3rem;
+    padding-left: 1rem;
+}
+.header5 ul li:nth-child(1){
+    background: url("../img/31q5w5dir0ul8ue4ct8x4c1cedplf7dy.png") no-repeat 2.5rem center;
+    background-size: 2rem;
+
+}
+.header5 ul li:nth-child(2){
+    border-left: 1px solid white;
+    background: url("../img/mhhmw963w6xgeubiogpebz1gjaofdimc.png") no-repeat 2.5rem center;
+    background-size: 2rem;
+}
+.header5 ul li a{
+    font-size: 1.6rem;
+    color: white;
+    width: 100%;
+}
+.main5{
+    background: #EFEFEF;
+    width: 100%;
+    height: 100%;
+    padding: 14rem 0 6rem 0;
+    /*position: relative;*/
+}
+.main5 .myorder{
+    margin-top: 1rem;
+    height: 5rem;
+    line-height: 5rem;
+    width: 100%;
+    background: white;
+    padding: 0 1rem;
+}
+.main5 .myorder span{
+    font-size: 1.6rem;
+}
+.main5 .myorder span:nth-child(2){
+    float: right;
+}
+.main5 .myorder span:nth-child(2) a{
+    font-size: 1.6rem;
+    color: #999999;
+
+}
+
+.main5 .pay{
+    margin-top: .2rem;
+    height: 7rem;
+    width: 100%;
+    background: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content:space-between;
+    /*align-content: center;*/
+}
+.main5 .pay li{
+    width: 25%;
+    text-align: center;
+    flex: 1;
+}
+.main5 .pay li div{
+    width: 25%;
+    margin: 0 auto;
+}
+.main5 .pay li div img{
+    width: 100%;
+}
+.main5 .pay li p{
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    height: 2.5rem;
+}
+/*积分商城*/
+.main5 .shop{
+    margin-top: 1rem;
+    height: 10rem;
+    width: 100%;
+    background: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content:space-between;
+    /*align-content: center;*/
+    padding: 1rem 0;
+}
+.main5 .shop li{
+    width: 25%;
+    text-align: center;
+    flex: 1;
+}
+.main5 .shop li div{
+    width: 40%;
+    margin: 0 auto;
+}
+.main5 .shop li div img{
+    width: 100%;
+}
+.main5 .shop li p{
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    height: 2.5rem;
+}
+.main5 .weare{
+    margin-top: .2rem;
+    height: 10rem;
+    width: 100%;
+    background: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content:space-between;
+    padding: 1rem 0;
+}
+
+.main5 .weare li{
+    width: 25%;
+    text-align: center;
+    /*flex: 1;*/
+}
+.main5 .weare li div{
+    width: 40%;
+    margin: 0 auto;
+}
+.main5 .weare li div img{
+    width: 100%;
+}
+.main5 .weare li p{
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    height: 2.5rem;
+}
+.main5 .logout{
+    margin-top: 3rem;
+    height: 5rem;
+    width: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    /*justify-content: center;*/
+}
+.main5 .logout li{
+    width: 100%;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+footer{
+    height:5rem;
+    width: 100%;
+    background: #F6F6F6;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0px;
+    /*padding-top: 5px;*/
+    border: 1px solid #F2F2F2;
+}
+footer a{
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*align-content: center;*/
+
+    /*justify-content: center;*/
+}
+footer .footer1{
+    flex:1;
+    width: 25%;
+    text-align: center;
+}
+footer .footer1 div{
+    margin:0 auto;
+    width: 30%;
+    /*border: 1px solid;*/
+    text-align: center;
+}
+footer .footer1 div img{
+    width: 100%;
+}
+footer .footer1 p {
+    color: #777777;
+    margin-top: .2rem;
+    font-size: 1.2rem;
+}
+
+

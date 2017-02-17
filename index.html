@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" href="./lib/swiper-3.3.1.min.css" />
+		<!--<link rel="stylesheet" type="text/css" href="./lib/main.css" />-->
+
+	</head>
+	<body>
+		
+		<!-- 路由切换容器 -->
+		<div ui-view ng-class="{true : 'class1', false : 'class2'}[rootIsFooterShow]">
+			
+		</div>
+
+
+		<!-- rootIsFooterShow 是一个全局变量，控制footer是否显示 -->
+		<div id="footer" ng-show="rootIsFooterShow">
+			<ul>
+				<li><a href="#/home">
+					<div></div>
+					<p>首页</p>
+				</a></li>
+				<li><a href="#/market">
+					<div></div>
+					<p>闪送超市</p>
+
+				</a></li>
+				<!-- 这里模拟带参数 -->
+				<li><a href="#/cart">
+					<div></div>
+					<p>购物车<span class="cartAdd"></span></p>
+
+				</a></li>
+				<li><a href="#/mine">
+					<div></div>
+					<p>我的</p>
+				</a></li>
+			</ul>
+		</div>
+
+		<!-- jquery要在angularJS之前引入 -->
+		<script type="text/javascript" src="./lib/jquery.js" ></script>
+		<script type="text/javascript" src="./lib/angular.min.js" ></script>
+		<script type="text/javascript" src="./lib/angular-css.js" ></script>
+		<script type="text/javascript" src="./lib/angular-ui-router.js" ></script>
+		<script type="text/javascript" src="app.js" ></script>
+		<!-- 服务要在控制器之前引入 -->
+		<script type="text/javascript" src="js/services.js" ></script>
+		<script type="text/javascript" src="js/controllers.js" ></script>
+		<script type="text/javascript" src="./lib/swiper-3.3.1.min.js" ></script>
+
+		<!--<script type="text/javascript" src="http://libs.useso.com/js/jquery/1.7.2/jquery.min.js"></script>-->
+		<!--<script src="./lib/jquery.fly.min.js"></script>-->
+		<!--[if lte IE 9]>
+		<!--<script src="./lib/requestAnimationFrame.js"></script>-->
+		<!--<![endif]&ndash;&gt;-->
+		<script src="http://cdn.bootcss.com/zepto/1.1.6/zepto.min.js"></script>
+		<script src="http://m.fuqian.la/jssdk/h5jssdk.3.0.js"></script>
+
+	</body>
+</html>

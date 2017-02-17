@@ -1,0 +1,141 @@
+.header6{
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    height:5rem;
+    background-color: #F9FAFD;
+    /*margin-top: 0.1px;*/
+}
+.header6 span:nth-child(1){
+
+    width: 10%;
+    font-size: 2rem;
+}
+.header6 span:nth-child(2){
+    width: 90%;
+    text-align: center;
+    margin-outside: 5rem;
+    line-height: 5rem;
+    height: 5rem;
+    margin-left: 6rem;
+    font-size: 1.6rem;
+    background-size: 3rem;
+    color: #333333;
+}
+.main6{
+    background: #EFEFEF;
+    width: 100%;
+    height: 100%;
+    margin: 5rem 0 5rem;
+}
+/*可用积分*/
+.integralbg{
+    background: white;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+    position: relative;
+    padding-left: 4.5rem;
+}
+/*canvas{*/
+    /*position: relative;*/
+/*}*/
+.integral{
+    text-align: center;
+    width: 7.5rem;
+    height: 7.5rem;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    left: -9.5rem;
+}
+.integral p{
+    font-size: 1.6rem;
+    color: #9a9a9a;
+}
+.integral p span{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+
+
+.main6 .threeLine{
+    height: 22rem;
+    width: 100%;
+    background: white;
+}
+/*.main6 .circle{*/
+    /*height: 15rem;*/
+    /*width: 100%;*/
+    /*border-top: 2px solid #EFEFEF;*/
+    /*border-bottom: 2px solid #EFEFEF;*/
+/*}*/
+
+
+
+
+.main6 .threeLine{
+    width: 100%;
+    height: 8rem;
+    display: flex;
+}
+.main6 .threeLine li{
+    flex: 1;
+    text-align: center;
+    border-left: 2px solid #EFEFEF;
+}
+.main6 .threeLine li:nth-child(1){
+    border-left:none;
+}
+.main6 .threeLine li div{
+    height: 5rem;
+}
+.main6 .threeLine li div img{
+    height: 55%;
+    margin-top: 1rem;
+}
+.main6 .threeLine li p{
+    color: #999999;
+    font-size: 1.6rem;
+}
+.main6 .list{
+    height: 26rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    background: white;
+}
+.main6 .list li{
+    width: 48%;
+    padding: 1rem;
+    border:1px solid #EFEFEF;
+}
+.main6 .list li:nth-child(2n){
+    /*border-left: 2px solid #EFEFEF;*/
+}
+.main6 .list li div{
+    width: 100%;
+}
+.main6 .list li div img{
+    width: 100%;
+}
+.main6 .list li p:nth-child(2){
+    font-size: 1.6rem;
+    height: 2rem;
+}
+.main6 .list li p:nth-child(3){
+    font-size: 1.6rem;
+    color: #E64F1A;
+    height: 2rem;
+}
+
+

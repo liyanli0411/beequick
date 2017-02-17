@@ -1,0 +1,80 @@
+<!--<div class="cart">-->
+	<!--<h1>购物车</h1>-->
+	<!--<h1>{{ cartCtrl.name }} === {{ cartCtrl.age }}</h1>-->
+<!--</div>-->
+<body>
+<section>
+	<header class="headerw">
+
+		<div>购物车</div>
+		<!--<div><a href="#/market"></a>购物车</div>-->
+	</header>
+	<main>
+		<ul class="userinfo">
+			<li>
+				<span>收 货 人</span>
+				<span>枫瑟</span>
+			</li>
+			<li>
+				<span>电&nbsp&nbsp话</span>
+				<span>157****1320</span>
+				<span class="repeat">修改 ></span>
+			</li>
+			<li>
+				<span>收货地址</span>
+				<span>北京市育新地铁站</span>
+			</li>
+		</ul>
+		<div class="market">
+			<p>闪送超市</p>
+			<p>￥0起送，22:00前满￥30免运费，22:00后满￥69免运费</p>
+		</div>
+		<div class="time">
+			<span>收货时间 </span>
+			<span>一小时送达</span>
+			<span>可预订 ></span>
+		</div>
+		<div class="remark">
+			收货备注 <input type="text" placeholder="可输入100字以内特殊要求内容">
+		</div>
+		<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td><img src="../img/w1.png"></td>
+				<td><img ng-src="{{ cartCtrl.product.img }}" alt=""></td>
+				<td>
+					<p>{{ cartCtrl.product.name }}</p>
+					<p>
+						<span>{{ cartCtrl.product.price }}</span>
+						<span class="addList">+</span>
+						<span class="addInner">1</span>
+						<span class="addLow">-</span>
+					</p>
+				</td>
+			</tr>
+			<!--<tr>-->
+				<!--<td><img src="../img/w1.png"></td>-->
+				<!--<td><img src="../img/20161018181534_374191.jpg" alt=""></td>-->
+				<!--<td>-->
+					<!--<p>爱鲜蜂•云南蒙自石榴</p>-->
+					<!--<p>-->
+						<!--<span>￥12.9</span>-->
+						<!--<span>+</span>-->
+						<!--<span>1</span>-->
+						<!--<span>-</span>-->
+					<!--</p>-->
+				<!--</td>-->
+			<!--</tr>-->
+
+		</table>
+		<div class="inall">
+			<div>
+				<img src="../img/w1.png" alt=""><span>全选</span>
+			</div>
+			<div>
+				共：<span class="allPrice"></span>
+			</div>
+			<div><a href="#/order">选好了</a></div>
+		</div>
+	</main>
+</section>
+</body>

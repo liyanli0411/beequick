@@ -1,0 +1,184 @@
+
+<body>
+<section>
+	<header class="header1">
+		<div class="sweep">
+			<span>&#xe631</span>
+			<p>扫一扫</p>
+		</div>
+		<div class="location">
+			<span>育新地铁站</span>
+		</div>
+		<div class="search">搜 索</div>
+	</header>
+	<main class="main1">
+		<!--轮播图-->
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div ng-repeat="slide in slides" class="swiper-slide">
+					<img ng-src="{{slide.activity.img}}"/>
+				</div>
+				<!--<div class="swiper-pagination"></div>-->
+			</div>
+
+		</div>
+
+		<!--疯狂秒杀-->
+		<ul class="shopping">
+			<li ng-repeat="menu in menus">
+				<a href="#/crazyKill">
+				<img ng-src="{{ menu.activity.img }}">
+				<p>{{ menu.activity.name }}</p>
+				</a>
+			</li>
+			<!--<li>-->
+			<!--<div><img src="../img/advert-1-bj-2.png" alt=""></div>-->
+			<!--<p>现货直供</p>-->
+			<!--</li>-->
+			<!--<li>-->
+			<!--<div><img src="../img/advert-1-bj-3.png" alt=""></div>-->
+			<!--<p>整箱购</p>-->
+			<!--</li>-->
+			<!--<li>-->
+			<!--<div><img src="../img/advert-1-bj-4.png" alt=""></div>-->
+			<!--<p>乳品</p>-->
+			<!--</li>-->
+		</ul>
+		<ul class="milk">
+			<li><img src="../img/20161223183722100.jpg@90Q.jpg" alt=""></li>
+			<li><img src="../img/2016122615330129.jpg@90Q.jpg" alt=""></li>
+			<li><img src="../img/2016122318061466.jpg@90Q.jpg" alt=""></li>
+		</ul>
+		<div class="cvs">
+			<div><img src="../img/201609232046093.png@90Q.png" alt=""></div>
+			<ul class="first">
+				<li><img src="../img/2016092417285271.jpg@90Q.jpg" alt=""></li>
+				<li><img src="../img/2016092417282359.jpg@90Q.jpg" alt=""></li>
+			</ul>
+
+			<ul class="second">
+				<li ng-repeat="friut in homeCtrl.list">
+					<a ng-href="#/detail/{{ friut.friutId }}">
+					<img ng-src="{{friut.img}}"/>
+					<p>{{friut.name}}</p>
+				</a>
+				</li>
+				<!--<li>-->
+					<!--<img src="../img/2016092415272487.png@90Q.png" alt="">-->
+					<!--<p>饮料酒水</p>-->
+				<!--</li>-->
+				<!--<li>-->
+					<!--<img src="../img/2016092415283782.png@90Q.png" alt="">-->
+					<!--<p>优选水果</p>-->
+				<!--</li>-->
+				<!--<li>-->
+					<!--<img src="../img/2016092411075920.png@90Q.png" alt="">-->
+					<!--<p>更多</p>-->
+				<!--</li>-->
+			</ul>
+			<ul class="third">
+				<li><img src="../img/2016122610531910.jpg@90Q.jpg" alt=""></li>
+				<li><img src="../img/2016112918160610.jpg@90Q.jpg" alt=""></li>
+				<li><img src="../img/201609241914489.jpg@90Q.jpg" alt=""></li>
+				<li><img src="../img/2016092417350939.png@90Q.png" alt=""></li>
+			</ul>
+		</div>
+		<div class="count">
+			<div class="title">
+				<span class="left">优选水果</span>
+				<span class="right">更多 ></span>
+			</div>
+			<div class="pic"><img src="../img/201611221806316.jpg@90Q.jpg" alt=""></div>
+			<ul class="fruit">
+				<li>
+					<div class="top">
+						<img src="../img/20161108183015_698812.jpg" alt="">
+					</div>
+					<div class="bottom">
+						<p>爱鲜蜂- 赣南脐橙</p>
+						<p>精选</p>
+						<p>750-1050g 3粒</p>
+						<p>￥17.5<span class="price">￥17.0</span><span class="add">+</span></p>
+					</div>
+				</li>
+				<li>
+					<div class="top">
+						<img src="../img/20161116173544_219028.jpg" alt="">
+					</div>
+					<div class="bottom">
+						<p>火龙果 新品</p>
+						<p>精选</p>
+						<p>750-1050g 3粒</p>
+						<p>￥23<span class="price">￥17.0</span><span class="add">+</span></p>
+					</div>
+				</li>
+				<li>
+					<div class="top">
+						<img src="../img/20161108183015_698812.jpg" alt="">
+					</div>
+					<div class="bottom">
+						<p>爱鲜蜂- 赣南脐橙</p>
+						<p>精选</p>
+						<p>750-1050g 3粒</p>
+						<p>￥7.5<span class="price">￥17.0</span><span class="add">+</span></p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="count count1">
+			<div class="title">
+				<span class="left">牛奶面包</span>
+				<span class="right">更多 ></span>
+			</div>
+			<div class="pic"><img src="http://img01.bqstatic.com//upload/activity/2016093011213251.jpg@90Q.jpg" alt=""></div>
+			<ul class="fruit">
+				<li>
+					<div class="top">
+						<img src="http://img01.bqstatic.com/upload/goods/201/604/0710/20160407104710_199419.jpg@200w_200h_90Q" alt="">
+					</div>
+					<div class="bottom">
+						<p>活润草莓桑葚</p>
+						<p>精选</p>
+						<p>370g</p>
+						<p>￥10.5<span class="price">￥17.0</span><span class="add">+</span></p>
+					</div>
+				</li>
+				<li>
+					<div class="top">
+						<img src="http://img01.bqstatic.com/upload/goods/201/608/2618/20160826185419_023449.jpg@200w_200h_90Q" alt="">
+					</div>
+					<div class="bottom">
+						<p>骑士1992酸牛奶</p>
+						<p>精选</p>
+						<p>180g</p>
+						<p>￥17.5<span class="price">￥17.0</span><span class="add">+</span></p>
+					</div>
+				</li>
+				<li>
+					<div class="top">
+						<img src="http://img01.bqstatic.com/upload/goods/201/602/2309/20160223093015_058280.jpg@200w_200h_90Q" alt="">
+					</div>
+					<div class="bottom">
+						<p>伊利大果粒芒果</p>
+						<p>精选</p>
+						<p>750-1050g 3粒</p>
+						<p>￥17.5<span class="price">￥17.0</span><span class="add">+</span></p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</main>
+</section>
+</body>
+
+
+<!--<div class="home">-->
+	<!--<h1>{{ homeCtrl.pageName }}</h1>-->
+	<!--<ul>-->
+		<!--<li style="padding: 20px;" ng-repeat="person in homeCtrl.list | orderBy : 'age' : true">-->
+			<!--&lt;!&ndash; 详情页面 &ndash;&gt;-->
+			<!--<a ng-href="#/detail/{{person.personId}}">{{ person.name }} === {{ person.age }}</a>-->
+		<!--</li>-->
+	<!--</ul>-->
+<!--</div>-->
+

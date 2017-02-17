@@ -1,0 +1,130 @@
+<!--<div class="market">-->
+	<!--<h1>闪送超市</h1>-->
+	<!--<h1 ng-click="marketCtrl.goBack();">返回</h1>-->
+<!--</div>-->
+<body>
+<section>
+	<header class="headerq">
+		<div class="sweep">
+			<span>&#xe631</span>
+			<p>扫一扫</p>
+		</div>
+		<div class="location">
+			<span>育新地铁站</span>
+		</div>
+		<div class="search">搜 索</div>
+	</header>
+	<main class="main2">
+		<div class="left_div">
+			<ul class="left">
+				<li>热销榜</li>
+				<li>天天特价</li>
+				<li>优选水果</li>
+				<li>牛奶面包</li>
+				<li>卤味熟食</li>
+				<li>饮料酒水</li>
+				<li>休闲零食</li>
+				<li>方便速食</li>
+				<li>粮油调味</li>
+				<li>生活用品</li>
+				<li>冰淇淋</li>
+				<li>代购星巴克</li>
+				<li>天天特价</li>
+				<li>天天特价</li>
+			</ul>
+		</div>
+		<div class="right_div">
+			<ul class="right">
+				<li><span>全部分类&nbsp&nbsp|</span><span>综合排序</span></li>
+				<li ng-repeat="product in marketCtrl.list">
+				<!--<li ng-repeat="product in lists">-->
+					<div class="pic"><img ng-src="{{product.img}}"></div>
+					<div class="pic_right">
+					<p>{{product.name}}</p>
+					<p>精选</p>
+					<p>{{product.specifics}}</p>
+					<p>{{product.price}}<span class="price">{{product.market_price}}</span>
+						<span class="reduce">-</span><span class="num"></span>
+						<span class="add"><a ng-href="#/cart/{{ product.productId }}">+</a></span></p>
+						<!--<span class="add" ng-click="marketCtrl.getUserList(product.productId)">+</span></p>-->
+					</div>
+				</li>
+				<!--<a ng-href="#/detail/{{ friut.friutId }}">-->
+
+				<!--<li>-->
+				<!--<div class="pic"><img src="../img/0000094612_91200.jpg" alt=""></div>-->
+				<!--<div class="pic_right">-->
+				<!--<p>飘香鸡心肝（熏卤原味）</p>-->
+				<!--<p>精选</p>-->
+				<!--<p>170g</p>-->
+				<!--<p>￥12 <span class="price">￥18</span><span class="add">+</span></p>-->
+				<!--</div>-->
+				<!--</li>-->
+				<!--<li>-->
+				<!--<div class="pic"><img src="../img/0000094612_91200.jpg" alt=""></div>-->
+				<!--<div class="pic_right">-->
+				<!--<p>飘香鸡心肝（熏卤原味）</p>-->
+				<!--<p>精选</p>-->
+				<!--<p>170g</p>-->
+				<!--<p>￥12 <span class="price">￥18</span><span class="add">+</span></p>-->
+				<!--</div>-->
+				<!--</li>-->
+				<!--<li>-->
+				<!--<div class="pic"><img src="../img/0000094612_91200.jpg" alt=""></div>-->
+				<!--<div class="pic_right">-->
+				<!--<p>飘香鸡心肝（熏卤原味）</p>-->
+				<!--<p>精选</p>-->
+				<!--<p>170g</p>-->
+				<!--<p>￥12 <span class="price">￥18</span><span class="add">+</span></p>-->
+				<!--</div>-->
+				<!--</li>-->
+				<!--<li>-->
+				<!--<div class="pic"><img src="../img/0000094612_91200.jpg" alt=""></div>-->
+				<!--<div class="pic_right">-->
+				<!--<p>飘香鸡心肝（熏卤原味）</p>-->
+				<!--<p>精选</p>-->
+				<!--<p>170g</p>-->
+				<!--<p>￥12 <span class="price">￥18</span><span class="add">+</span></p>-->
+				<!--</div>-->
+				<!--</li>-->
+				<!--<li>-->
+				<!--<div class="pic"><img src="../img/0000094612_91200.jpg" alt=""></div>-->
+				<!--<div class="pic_right">-->
+				<!--<p>飘香鸡心肝（熏卤原味）</p>-->
+				<!--<p>精选</p>-->
+				<!--<p>170g</p>-->
+				<!--<p>￥12 <span class="price">￥18</span><span class="add">+</span></p>-->
+				<!--</div>-->
+				<!--</li>-->
+				<!--<li>-->
+				<!--<div class="pic"><img src="../img/0000094612_91200.jpg" alt=""></div>-->
+				<!--<div class="pic_right">-->
+				<!--<p>飘香鸡心肝（熏卤原味）</p>-->
+				<!--<p>精选</p>-->
+				<!--<p>170g</p>-->
+				<!--<p>￥12 <span class="price">￥18</span><span class="add">+</span></p>-->
+				<!--</div>-->
+				<!--</li>-->
+				<!--<li>-->
+				<!--<div class="pic"><img src="../img/0000094612_91200.jpg" alt=""></div>-->
+				<!--<div class="pic_right">-->
+				<!--<p>飘香鸡心肝（熏卤原味）</p>-->
+				<!--<p>精选</p>-->
+				<!--<p>170g</p>-->
+				<!--<p>￥12 <span class="price">￥18</span><span class="add">+</span></p>-->
+				<!--</div>-->
+				<!--</li>-->
+			</ul>
+
+
+			<!--<div class="m-sidebar">-->
+				<!--<div class="cart">-->
+					<!--<i id="end"></i>-->
+					<!--<span>购物车</span>-->
+				<!--</div>-->
+			<!--</div>-->
+			<!--<div id="msg">已成功加入购物车！</div>-->
+		</div>
+	</main>
+</section>
+</body>
